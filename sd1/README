@@ -31,15 +31,3 @@ undo->am implementat functionalitatea undo doar pentru cazul in care introducem
 	o linie text. Undo va produce stergerea respectivei linii.
 redo->am implementat functionalitatea redo doar pentru undo-ul creat de mine.
 	Astfel redo introduce in lista linia careia i-am dat undo.
-
-Tema a fost extrem de interesanta.Singura problema a fost reprezentata de 
-ambiguitatile de la inceput.
-Am lucrat 5 zile la tema.
-Pentru coding style am folosit exclusiv acel checker dat de echipa de SD
-anul trecut.
-Dupa ce am terminat de scris codul am rezolvat toate erorile care imi apareau,
-chiar daca unele warninguri spuneau ca depasesc 80 de caractere,lucru care nu 
-se intampla mereu(de ex liniile 217-218 puteau fi scrise pe o linie fara sa
-depasesc limita,desi checkerul zicea ca e warning).
-
-Popa Marian-Elvis 323CC
