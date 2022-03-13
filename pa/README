@@ -1,0 +1,35 @@
+Am rezolvat prima problema facand o structura de date care are 2 campuri:
+putere de procesare si costul necesar pentru a creste cu 1 puterea de procesare.
+Am folosit 2 vectori alocati dinamic pentru merge_sort ,de unde rezulta 
+o complexitate de O(nlogn).
+Deoarece creez sumele partiale mai am o complexitate de O(n).
+Dupa care parcurg vectorul sortat si obtin O(n) si pentru fiecare caz din acel
+for mai am maxim O(n)(acel while).
+La sfarsit eliberez memori si mai am O(n).
+Per total complexitatea algoritmului este O(nlogn).
+Mi-a luat destul de mult timp sa imi dau seama cum sa rezolv aceasta problema.
+Creez vectorul,il sortez folosind merge sort,trec prin fiecare element.In primul
+if verific daca am aceeasi putere de procesare si in acest caz trec mai 
+departe.
+Daca nu am aceeasi putere de proccesare incerc sa aduc toate calculatoarele de
+dinainte la acel nivel al calculatorului curent.Daca reusesc actualizez 
+rezultatul.
+Daca nu pot face asta,incerc sa cresc treptat puterea de procesare a tuturor 
+calculatoarelor (toate odata) si fac acest lucru cat timp mai am bani.
+Al treilea caz este acela in care am ajuns cu toate calculatoarele la acelasi 
+nivel si inca mai am bani.Calculez cate nivele le mai pot creste(pe toate odata)
+si adaug rezultatul.
+Pentru problema a treia am alocat dinamic un vector si am cautat minimul.Acela 
+e punctul in care se face tranzitia prefix-sufix.
+Cazurile tratate: cand punctul e la inceput,cand punctul e la final si cand e 
+la mijloc.
+Daca punctul era la mijloc parcurg de la inceput catre acel punct si apoi de 
+la sfarsit catre acel punct.
+Iau ca element de referinta un element specific si fac suma elementelor doar 
+daca e posibil ca ulterior sa le mai modific.Eu nu modific vectorul,doar retin 
+rezultatul in variabila rez.
+Complexitate: O(N) pentru cele doua parcurgeri,O(N) pentru citire, O(1) pentru
+ if-uri,else-uri,printare,setare variabile si eliberare memorie.
+Per total am complexitatea O(N).
+
+Popa Marian-Elvis 323CC

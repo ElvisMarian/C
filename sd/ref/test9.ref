@@ -1,0 +1,10 @@
+Cannot move to 'f1': No such directory!
+Cannot move to 'f2': No such directory!
+f1 f2 d1 d2
+Cannot move to 'd2': No such directory!
+/d1
+Cannot move to 'd1': No such directory!
+/d2
+Cannot move to 'd11': No such directory!
+/d2/d1
+/d1/d11

@@ -1,0 +1,9 @@
+f1 f2 f3 f4 f5 
+f1 f2 f4 f5 
+f2 f4 f5 
+Cannot remove 'f1': No such file!
+Cannot remove 'f2': No such file!
+f2 f4 f5 f1 
+Cannot remove 'f1': No such file!
+Cannot remove 'f3': No such file!
+f1 

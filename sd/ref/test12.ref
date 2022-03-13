@@ -1,0 +1,40 @@
+/
+/
+    file1
+    file2
+    file3
+    file4
+    dir1
+Cannot move to 'file1': No such directory!
+dir11
+    f1
+    f2
+    f3
+/dir1/dir12/dir121
+/
+    file1
+    file2
+    file3
+    file4
+    dir1
+        f1
+        f2
+        f3
+        dir11
+            f1
+            f2
+            f3
+        dir12
+            dir121
+                bingo
+                f111
+                dir1211
+        dir122
+        dir123
+        dir13
+            f1
+            f2
+            f3
+            dir131
+            dir132
+            dir133

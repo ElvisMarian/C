@@ -1,0 +1,45 @@
+Pentru implementarea temei am folosit biblioteca parson.
+Am folosit foarte mult laboratorul 10 deoarece asa era recomandat in enuntul
+temei.
+Din moment noi aveam de implementat doar partea de client nu am intervenit
+pentru a testa daca inputurile sunt valide,deoarece asta este treaba serverului.
+Am folosit 2 variabile locale alocate dinamic pentru a verifica daca s-a facut
+logarea,respectiv pentru a verifica daca exista permisiuni de acces pentru 
+biblioteca.
+Partea cu matricea cookies a fost luata tot din laborator si nu am tinut cont 
+daca datele sunt pentru token sau cookie,am folosit aceeasi matrice.
+Am adaugat inca 2 parametrii la functiile compute... pentru ca imi erau 
+necesari atat pentru cookie-uri cat si pentru acei tokeni JWT.
+In fisierul request doar am adaugat acesti parametrii si am facut o noua functie
+pe care am folosit-o pentru stergerea unei carti.
+Abordarea consta intr-o bucla infinita in care astept ca si input comanda 
+corespunzatoare.Daca nu introduc o comanda valida am afisat un mesaj. Cazurile:
+
+login + register: singurele diferente(2) intre cele doua comenzi sunt: apelul
+functiei compute_post_request (pentru ca portul difera) si cazul in care retin 
+acel Set-Cookie (setez variabila care imi spune ca m-am logat).
+
+enter_library: verificarea faptului ca sunt logat si extragerea valorii
+tokenului pe care am pus-o in cealalta variabila(permisiune de acces biblioteca)
+
+get_books:verifica faptul ca sunt logat si trimite serverului un request.
+Serverul imi va trimite(daca sunt logat) lista cu cartile din libraria userului.
+
+get_book:imi cere introducerea unui ip,dupa care verifica daca am acces la 
+biblioteca si daca am atunci intoarce informatii despre cartea respectiva.
+
+add_book:imi cere sa introduc anumite date,creeaza obiectele json(deoarece ruta
+de acces este de tip post), apoi trimite request-ul la server.Verificarea se 
+face prin token.
+
+delete_book:imi cere sa introduc un id si trimite serverului request pentru
+stergerea cartii.Functia compute...este functia adaugata de mine in reqests.c
+
+logout:se va verifica autentificarea si se va sterge continutul variabilelor 
+pentru acces si login.
+
+exit: inchid conexiunea si ies din bucla
+In toate aceste cazuri am trimits requesturi la server si am afisat rezultatul.
+La fiecare ciclu inchideam si redeschideam conexiunea.
+Popa Marian-Elvis 323CC
+

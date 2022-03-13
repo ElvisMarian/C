@@ -1,0 +1,23 @@
+Am implementat doar taskul 1:
+	Am creat o structura care reprezinta un nod ce contine:matricea si doua 
+	liste: una pentru fiecare varianta initiala si cealalta cu posibilitatile
+	variantei respective.
+	Am citit din fisier matricea si mutarea,dupa care am inceput sa creez
+arborele.
+	Intai parcurg matricea de la stanga la dreapta si daca gasesc '-' atunci 
+	adaug matricea in lista cu posibilitati si verific daca mai am si alte 
+posibilitati(daca jocul s-a incheiat sau nu).Daca nu s-a incheiat atunci 
+apelez functia pentru matricea noua pe care o am.Adaugarea in lista este o 
+adaugare fie in lista de posibilitati,fie ca si urmatorul element in lista mea.
+	Am o functie care imi creeaza un nod nou si il returneaza pentru a evita 
+codul duplicat.
+	Functia pentru verificarea starii jocului(daca s-a terminat sau nu ) 
+	verifica intotdeauna diagonalele matricei si celelalte pozitii in functie de 
+coordonatele care sunt transmise la apelul functiei.
+	La sfarsit am o functie care imi pune arborele rezultat in fisier.
+	Dupa am o functie care imi elibereaza memoria din arbore,intai elementele 
+din listele de posibilitati,apoi elementele principale si in cele din urma 
+matricile.
+La final eliberez ultima matrice si inchid fisierele.
+
+Popa Marian Elvis 323CC

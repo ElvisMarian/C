@@ -1,0 +1,45 @@
+Pentru aceasta tema am folosit o lista dublu inlantuita si doua stive.
+O stiva este folosita pentru a retine comenzile si cealalta pentru a retine
+textul ce trebuie inserat.
+Am o variabila care decide daca comanda introdusa este o comanda sau este 
+text pe care il voi insera in lista.
+Primul nod din lista mea este 'root' si nu se va lua in considerare niciodata.
+Am implementat cursorul ca fiind un pointer catre un nod din lista.
+Am implementat urmatoarele functii:
+s->in cazul in care primesc save voi scrie textul 
+	(pe care il am retinut in lista)in fisierul editor.out. Daca in urma altor
+	comenzi se da din nou save voi 
+	suprascrie fisierul cu noul text retinut in lista.Functia prin care fac 
+	aceste lucruri este print.
+q->atunci cand primesc q inchei citirile,eliberez memoria alocata pentru lista 
+	si cele doua stive si inchid fisierele.
+b->functia sterge nodul(si implicit caracterul din lista) care se afla pe
+	pozitia anterioara cursorului si actualizeaza cursorul. Functia care face
+	aceste operatii este backspace
+dl [line]-> am un pointer care porneste de la inceputul listei si cauta pana la 
+	linia indicata sau pana la linia indicata de cursor.Apoi pentru fiecare nod
+	din lista pentru care linia este egala cu nr liniei din nod voi face 
+	stergerea acelui nod.Functia care face acest lucru se numeste del_line
+gl line-> iau un pointer catre primul nod din lista si merg cu el in continuare
+	pana cand nr_line-ul nodului va fi line.(In nr_line memorez numarul liniei
+	pe care se afla nodul respectiv).
+gc char [line]->caut linia si caracterul specificate prin parametru similar 
+	cu modul in care am facut gl line
+d [chars]->sterg chars caractere dupa cursor.Daca nu primesc parametru sterg 1
+	element dupa cursor.
+undo->am implementat functionalitatea undo doar pentru cazul in care introducem
+	o linie text. Undo va produce stergerea respectivei linii.
+redo->am implementat functionalitatea redo doar pentru undo-ul creat de mine.
+	Astfel redo introduce in lista linia careia i-am dat undo.
+
+Tema a fost extrem de interesanta.Singura problema a fost reprezentata de 
+ambiguitatile de la inceput.
+Am lucrat 5 zile la tema.
+Pentru coding style am folosit exclusiv acel checker dat de echipa de SD
+anul trecut.
+Dupa ce am terminat de scris codul am rezolvat toate erorile care imi apareau,
+chiar daca unele warninguri spuneau ca depasesc 80 de caractere,lucru care nu 
+se intampla mereu(de ex liniile 217-218 puteau fi scrise pe o linie fara sa
+depasesc limita,desi checkerul zicea ca e warning).
+
+Popa Marian-Elvis 323CC
