@@ -11,8 +11,4 @@ Printam fisierele si apoi directorul curent(care trecea prin toate directoarele)
 Pentru stergerea fisierlor a trebuit sa am grija sa dezaloc ceea ce am alocat in comanda touch si sa refac legaturile
 in cazul in care fisierul care trebuia sters era la inceput sau prin lista.
 Functia rmdir am implementat-o exact ca pe cea rm doar ca am adaptat-o la directoare.
-Nu am reusit sa dezaloc memoria din interiorul directorului sters si de aceea nu am mai facut bonusul
-In total cred ca am stat vreo 6 zile la aceasta tema.M-a ajutat sa imi insusesc mai bine cunostintele despre listele 
-simplu inlantuite,dar si cele invatate in primul semestru.
-Pe checker-ul meu imi da 90 de puncte,dar daca il incarc imi pica un test..
 
