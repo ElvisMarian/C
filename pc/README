@@ -41,5 +41,4 @@ pentru acces si login.
 exit: inchid conexiunea si ies din bucla
 In toate aceste cazuri am trimits requesturi la server si am afisat rezultatul.
 La fiecare ciclu inchideam si redeschideam conexiunea.
-Popa Marian-Elvis 323CC
 
