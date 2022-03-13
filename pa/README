@@ -31,5 +31,3 @@ rezultatul in variabila rez.
 Complexitate: O(N) pentru cele doua parcurgeri,O(N) pentru citire, O(1) pentru
  if-uri,else-uri,printare,setare variabile si eliberare memorie.
 Per total am complexitatea O(N).
-
-Popa Marian-Elvis 323CC
