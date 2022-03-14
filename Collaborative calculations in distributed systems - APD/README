@@ -1,0 +1,20 @@
+Am inceput implementarea temei urmand topologia de bonus(nu am creat legatura dintre 0 si 1).
+Pentru a afla topologia am ales liderul 2 inca de la inceput si am trimis de la 0 la 2 topologia,
+apoi de la 1 la 2 si astfel 2 a reusit sa cunoasca toata topologia.Acesta la randul lui a trimis-o
+copiilor apoi lui ,dupa care a trimis-o lui 0 si lui 1 care la randul lor au trimis-o copiilor lor.
+
+Pentru etapa de prelucrare a vectorului am folosit intervalele de start si end de la thread-uri.
+Am trimis de la 0 catre copii lui: dimensiunea, vectorul si intervalul(cele 2 
+numere).Am trimis lui 2 vectorul si fiecare interval,dupa care 2 a trimis copiilor lui si lui 1.
+La randul lui, 1 a trimis copiilor sai.
+Workerii si-au facut treaba si au inceput sa trimita parintilor rezultatele.
+Copii lui 1 au trimis parintelui,acesta a trimis vectorii si intervalele lui 2 care a trimis mai 
+departe lui 0 tot ce a primit de la 1 plus ce a primit de la copii lui.
+Astfel 0 a obtinut fiecare bucatica si le-a asamblat cu ajutorul intervalelor pe care le-am trimis
+inapoi odata cu vectorii.
+Implementarea putea fi facuta mai eficient,dar m-am axat mai mult pe corectitudine...
+Din moment ce am aplicat topologia pentru bonus direct nu a mai trebuit sa fac decat etapele 1 si 2.
+Coordonatorii s-au implicat doar prin transmiterea informatiilor dintr-o parte in alta,nu au 
+participat in niciun fel la efectuarea calculelor.
+Pentru fiecare send am afisat procesele care trimit si care primesc,deci am respectat topologia.
+Am incercat sa fac cat mai vizibil codul,insa nu stiu cat am resusit de mult din cauza print-urilor.
